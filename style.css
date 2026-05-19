@@ -629,6 +629,15 @@ footer {
   gap: 80px;
   align-items: start;
 }
+.section-faq {
+  padding: 120px 48px;
+}
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  align-items: start;
+}
 
 /* Responsive */
 @media (max-width: 1024px) {
@@ -640,13 +649,14 @@ footer {
   .featured-project { grid-template-columns: 1fr; }
   .featured-img { min-height: 280px; }
   .skills-layout { grid-template-columns: 1fr; gap: 48px; }
+  .faq-layout { grid-template-columns: 1fr; gap: 48px; }
 }
 @media (max-width: 768px) {
   nav#main-nav { padding: 16px 24px; }
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: flex; }
   section { padding: 80px 24px; }
-  .section-skills, .section-process { padding: 80px 24px; }
+  .section-skills, .section-process, .section-faq { padding: 80px 24px; }
   footer { padding: 32px 24px; flex-direction: column; text-align: center; }
   .cap-grid { grid-template-columns: 1fr; }
   .project-grid { grid-template-columns: 1fr; }

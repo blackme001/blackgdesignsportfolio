@@ -122,8 +122,9 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const mobileClose = document.querySelector('.mobile-close');
 
 hamburger?.addEventListener('click', () => {
-  mobileMenu.classList.add('open');
-  hamburger.classList.add('open');
+  const isOpen = mobileMenu.classList.contains('open');
+  mobileMenu.classList.toggle('open', !isOpen);
+  hamburger.classList.toggle('open', !isOpen);
 });
 mobileClose?.addEventListener('click', () => {
   mobileMenu.classList.remove('open');
